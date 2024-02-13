@@ -47,7 +47,9 @@ class _HomePageState extends State<HomePage> {
                 size: 30,
                 color: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                conroller.GotoShopping();
+              },
             ),
           ],
         ),
