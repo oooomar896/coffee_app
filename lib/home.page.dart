@@ -1,4 +1,5 @@
 import 'package:coffee_app/config/services_locator.dart';
+import 'package:coffee_app/controller/shopping_controller.dart';
 import 'package:coffee_app/models/coffee_item.model.dart';
 import 'package:coffee_app/models/treat_item.model.dart';
 import 'package:coffee_app/services/navigation.service.dart';
@@ -7,6 +8,7 @@ import 'package:coffee_app/widgets/intro.widget.dart';
 import 'package:coffee_app/widgets/sweet_treats.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:get/get.dart';
 
 import 'coffe_details.page.dart';
 import 'widgets/coffee_list.widget.dart';
@@ -21,8 +23,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    ShoppingControllerImp conroller = Get.put(ShoppingControllerImp());
+
     return Scaffold(
-        // extendBodyBehindAppBar: true,
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
