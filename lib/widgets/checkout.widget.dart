@@ -1,7 +1,6 @@
 import 'package:coffee_app/models/coffee_item.model.dart';
 import 'package:coffee_app/models/treat_item.model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -96,11 +95,11 @@ class CheckoutWidget extends StatelessWidget {
                       ],
                     ),
                   ),
-                Spacer(),
+                const Spacer(),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: kTitleColor,
-                    padding: EdgeInsets.symmetric(vertical: 20),
+                    backgroundColor: kTitleColor,
+                    padding: const EdgeInsets.symmetric(vertical: 20),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
