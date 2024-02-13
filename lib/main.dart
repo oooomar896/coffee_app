@@ -15,12 +15,12 @@ class CoffeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Coffee App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: UpgradeAlert(child: const HomePage()),
+      home: UpgradeAlert(child: HomePage()),
     );
   }
 }
