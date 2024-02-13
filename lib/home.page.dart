@@ -1,4 +1,3 @@
-import 'package:coffee_app/config/colors_constants.dart';
 import 'package:coffee_app/config/services_locator.dart';
 import 'package:coffee_app/models/coffee_item.model.dart';
 import 'package:coffee_app/models/treat_item.model.dart';
@@ -58,7 +57,8 @@ class _HomePageState extends State<HomePage> {
                   key: locator.get<NavigationService>().navigatorKey,
                   observers: [locator.get<NavigationService>().heroController],
                   onGenerateRoute: (settings) {
-                    NavigationArguments? args = settings.arguments as NavigationArguments?;
+                    NavigationArguments? args =
+                        settings.arguments as NavigationArguments?;
                     late Widget currentPage;
                     bool toHome = false;
 
@@ -66,28 +66,35 @@ class _HomePageState extends State<HomePage> {
                       if (settings.name == 'home') {
                         toHome = true;
                       }
-                      currentPage = settings.name == 'home' ? const CofeeListWidget() : const IntroWidget();
+                      currentPage = settings.name == 'home'
+                          ? const CofeeListWidget()
+                          : const IntroWidget();
                     } else {
                       currentPage = CoffeeDetailsPage(
                         coffee: CoffeeItem.mockItems[args.coffee],
                       );
                       if (args.isSweetTreats) {
-                        currentPage = SweetTreatsWidget(coffee: CoffeeItem.mockItems[args.coffee]);
+                        currentPage = SweetTreatsWidget(
+                            coffee: CoffeeItem.mockItems[args.coffee]);
                       }
                       if (args.isCheckout) {
                         currentPage = CheckoutWidget(
                           coffee: CoffeeItem.mockItems[args.coffee],
-                          treat: args.treat != null ? TreatItem.mockItems[args.treat!] : null,
+                          treat: args.treat != null
+                              ? TreatItem.mockItems[args.treat!]
+                              : null,
                         );
                       }
                     }
 
                     return PageRouteBuilder(
-                        transitionDuration: Duration(milliseconds: toHome ? 800 : 300),
+                        transitionDuration:
+                            Duration(milliseconds: toHome ? 800 : 300),
                         pageBuilder: (context, animation, secondaryAnimation) {
                           return FadeTransition(
                             opacity: animation,
-                            child: Container(color: Colors.white, child: currentPage),
+                            child: Container(
+                                color: Colors.white, child: currentPage),
                           );
                         });
                   }),

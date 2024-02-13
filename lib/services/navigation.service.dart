@@ -6,7 +6,10 @@ class NavigationArguments {
   final bool isSweetTreats;
   final bool isCheckout;
   NavigationArguments(
-      {required this.coffee, this.treat, this.isSweetTreats = false, this.isCheckout = false});
+      {required this.coffee,
+      this.treat,
+      this.isSweetTreats = false,
+      this.isCheckout = false});
 }
 
 class NavigationService {

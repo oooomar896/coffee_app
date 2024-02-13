@@ -1,5 +1,3 @@
-import 'dart:math';
-
 class TreatItem {
   final String id;
   final String name;
@@ -22,7 +20,8 @@ class TreatItem {
     TreatItem(
         id: '1',
         name: 'New York Cheesecake',
-        description: 'One of the creamiest cheesecakes you\'ll ever taste with a crumbly biscuit base.',
+        description:
+            'One of the creamiest cheesecakes you\'ll ever taste with a crumbly biscuit base.',
         image: 'assets/images/treat/TREAT_0.png',
         colories: '2195 kJ',
         price: 6.34),
@@ -61,7 +60,8 @@ class TreatItem {
     TreatItem(
         id: '6',
         name: 'Donut Cookie',
-        description: 'Colourful shortbread cookies in fun, novelty shapes of donuts.',
+        description:
+            'Colourful shortbread cookies in fun, novelty shapes of donuts.',
         image: 'assets/images/treat/TREAT_5.png',
         colories: '705 kJ',
         price: 3.13),

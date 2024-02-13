@@ -2,7 +2,6 @@ import 'package:coffee_app/models/coffee_item.model.dart';
 import 'package:coffee_app/models/treat_item.model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -50,7 +49,10 @@ class CheckoutWidget extends StatelessWidget {
               children: [
                 Text("My Order",
                     style: GoogleFonts.montserrat(
-                        fontSize: 30, fontWeight: FontWeight.w700, height: 1, color: kTitleColor)),
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                        height: 1,
+                        color: kTitleColor)),
                 const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -104,7 +106,8 @@ class CheckoutWidget extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {},
-                  child: Text("Checkout (${(coffee.price + (treat?.price ?? 0)).toStringAsFixed(2)}€)"),
+                  child: Text(
+                      "Checkout (${(coffee.price + (treat?.price ?? 0)).toStringAsFixed(2)}€)"),
                 )
               ],
             ),
