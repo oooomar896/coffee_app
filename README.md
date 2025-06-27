@@ -70,7 +70,7 @@ This project was inspired by the amazing coffee app concept designed by [Jacob J
 **Omar Al-Odainy**  
 📱 Mobile App Developer | Flutter & Odoo Developer  
 📍 Riyadh, Saudi Arabia  
-📧 [omarrghalibb@gmail.com](mailto:omarrghalibb@gmail.com)  
+📧 [oooomar123450@gmail.com](mailto:oooomar123450@gmail.com)  
 💼 [LinkedIn](https://linkedin.com/in/omar-hamid-288385235)  
 💻 [GitHub](https://github.com/oooomar896)  
 
